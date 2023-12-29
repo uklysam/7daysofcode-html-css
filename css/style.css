@@ -1,0 +1,98 @@
+:root {
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-36: 2.25rem;
+  --fs-48: 3rem;
+  --fs-60: 3.75rem;
+
+  --clr-white: #fff;
+  --clr-gray-500: #667085;
+  --clr-gray-700: #3a404e;
+  --clr-gray-900: #101828;
+  --primary-clr: #8e2424;
+
+  --shadow: 0 1px 2px #1018280d;
+}
+
+*,
+*::before,
+*::after {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+  max-width: 75rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+.header {
+  --btn-padding: 0.625rem 1.125rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem 0;
+  flex-wrap: wrap;
+  font-weight: var(--fw-medium);
+  line-height: 1.5;
+  padding-block: 1.125rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-18);
+  color: var(--clr-gray-700);
+}
+
+.header-menu {
+  display: flex;
+  gap: 0.875rem;
+  font-size: var(--fs-16);
+}
+
+.header-menu a {
+  padding: var(--btn-padding);
+  color: var(--clr-gray-500);
+}
+
+.register-or-login {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.register-or-login > * {
+  padding: var(--btn-padding);
+  color: var(--clr-gray-500);
+}
+
+.register-btn {
+  color: var(--clr-white);
+  background-color: var(--primary-clr);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
